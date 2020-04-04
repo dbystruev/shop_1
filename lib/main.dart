@@ -18,6 +18,7 @@ class App extends StatelessWidget {
       DeviceOrientation.portraitUp
     ]);
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Catalog',
       theme: ThemeData(
         primaryColor: Colors.white

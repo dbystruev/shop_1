@@ -225,7 +225,7 @@ class _OffersScreenState extends State<OffersScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
-                  Text('Товара нет в наличие')
+                  Text('Товара нет в наличии')
                 ],
               ) :  PageView.builder(
                 controller: _controller,

@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 typedef Widget _OnChangeCallback(BuildContext context, int index);
 typedef void _OnTapCallback(int id);
 
-class NavigationRail extends StatefulWidget {
-  NavigationRail.destinations(
+class CustomNavigationRail extends StatefulWidget {
+  CustomNavigationRail.destinations(
       {Key key, @required this.onChange, @required this.onTap,  @required this.destinations})
       : assert(destinations != null && onChange != null),
         super(key: key);
@@ -19,10 +19,10 @@ class NavigationRail extends StatefulWidget {
   final List<RailDestination> destinations;
 
   @override
-  _NavigationRailState createState() => _NavigationRailState();
+  _CustomNavigationRailState createState() => _CustomNavigationRailState();
 }
 
-class _NavigationRailState extends State<NavigationRail>{
+class _CustomNavigationRailState extends State<CustomNavigationRail>{
   int _currentIndex = 0;
 
   @override

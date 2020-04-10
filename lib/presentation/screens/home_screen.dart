@@ -75,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
           if(state is InitializationState){
             final category = state.category;
             final listChild = category.childs.take(3).toList();
-            return NavigationRail.destinations(
+            return CustomNavigationRail.destinations(
                 onTap: (id){
                   BlocProvider.of<GeneralBlocBloc>(context).add(GetCategories(id: listChild[id].id));
                 },
